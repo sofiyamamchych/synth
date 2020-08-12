@@ -1,0 +1,100 @@
+/*======== HEADER ========*/
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 3; }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff; }
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none; }
+    .header li a:hover {
+      background-color: #f4f4f4; }
+  .header .menu-btn {
+    display: none; }
+    .header .menu-btn:hover {
+      background-color: #f4f4f4; }
+    .header .menu-btn:checked ~ .menu {
+      max-height: 240px; }
+    .header .menu-btn:checked ~ .menu-icon .menu__iconimage {
+      background: transparent; }
+      .header .menu-btn:checked ~ .menu-icon .menu__iconimage:before {
+        transform: rotate(-45deg); }
+      .header .menu-btn:checked ~ .menu-icon .menu__iconimage:after {
+        transform: rotate(45deg); }
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .menu__iconimage:before {
+      top: 0; }
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .menu__iconimage:after {
+      top: 0; }
+  .header .header__logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none; }
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out; }
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none; }
+    .header .menu-icon .menu__iconimage {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px; }
+      .header .menu-icon .menu__iconimage:before {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+        top: 5px; }
+      .header .menu-icon .menu__iconimage:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+        top: -5px; }
+
+.menu__user a {
+  color: #3E3F58; }
+
+.menu__user img {
+  width: 30px; }
+
+@media (min-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: space-between; }
+    .header li {
+      float: none; }
+    .header li a {
+      padding: 20px 10px; }
+    .header .menu {
+      clear: none;
+      max-height: none;
+      display: flex; }
+      .header .menu li span {
+        display: none; }
+    .header .menu-icon {
+      display: none; } }
+
+/*======== HEADER END ========*/

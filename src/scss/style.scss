@@ -1,0 +1,17 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+$color-dark: #3E3F58;
+
+body {
+    margin: 0;
+    font-family: OpenSans;
+    color: $color-dark;
+}
+
+a {
+    text-decoration: none;
+    color: $color-dark;
+}
