@@ -14,7 +14,6 @@
     li {
         a {
             display: block;
-            padding: 20px 20px;
             text-decoration: none;
             &:hover {
                 background-color: #f4f4f4;
@@ -27,7 +26,7 @@
         }
         display: none;
         &:checked~.menu {
-            max-height: 240px;
+            max-height: 320px;
         }
         &:checked~.menu-icon {
             .menu__iconimage {
@@ -55,8 +54,11 @@
         display: block;
         float: left;
         font-size: 2em;
-        padding: 10px 20px;
+        padding: 13px 20px;
         text-decoration: none;
+        img {
+            width: 50px;
+        }
     }
     .menu {
         clear: both;
@@ -101,37 +103,104 @@
     }
 }
 
-.menu__user {
-    a {color: #3E3F58;}
-    img {
-        width: 30px;
-    }
+.menu__item {
+    padding: 10px 30px 18px 30px;
 }
 
+.menu__item__text {
+    padding-left: 12px;
+}
+
+.menu__user {
+    font-size: 15px;
+}
+
+.menu__userpic__img {
+    width: 48px;
+    margin: 0 15px 0 18px;
+    position: relative;
+    top: 9px;
+}
+
+.menu__userpic {
+    display: inline-block;
+    padding-bottom: 16px;
+}
+
+.menu__iconimg {
+    width: 32px;
+    position: relative;
+    top: 10px;
+    margin-right: 14px;
+}
 
 
 @media (min-width: 800px) {
     .header {
         display: flex;
         justify-content: space-between;
+        padding: 0 9% 0 8%;
+        box-sizing: border-box;
         li {
             float: none;
-        }
-        li a {
-            padding: 20px 10px;
+            a:hover{
+                opacity: 0.7;
+                background-color: #fff;
+                transition: all 0.2s ease-out;
+            }
         }
         .menu {
             clear: none;
             max-height: none;
             display: flex;
-            li span {
-                display: none;
-            }
         }
         .menu-icon {
             display: none;
         }
     }
+
+    .menu__item {
+        padding: unset;
+    }
+
+    .menu__iconlabel {
+        display: none;
+    }
+
+    .menu__user {
+        margin-right: 20px;
+        padding: 12px 0 0 0;
+        a {
+            padding: 0;
+        }
+    }
+
+    .menu__item__text {
+        padding-left: 0;
+    }
+
+    .menu__userpic {
+        &::after {
+            content: url('img/icons/arrow-down.svg');
+            position: relative;
+            top: -3px;
+        }
+    }
+
+    .menu__userpic__img {
+        width: 32px;
+    }
+
+    .menu__iconbtn {
+        padding-top: 20px;
+    }
+
+    .menu__iconimg {
+        top: 0;
+        margin-right: 0;
+    }
+
+    
 }
 
 /*======== HEADER END ========*/
