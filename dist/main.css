@@ -65,7 +65,7 @@ a {
     width: 100%; }
 
 .userinfo__nameblock {
-  width: calc(100% - 130px);
+  width: calc(100% - 150px);
   padding: 1px 24px; }
 
 .userinfo__nameblock__name {
@@ -82,7 +82,7 @@ a {
 
 .userinfo__nameblock__edit {
   color: #F05D63;
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: underline; }
   .userinfo__nameblock__edit img {
     width: 20px;
@@ -91,8 +91,10 @@ a {
     margin-right: 9px; }
 
 .userinfo__maininfo__menu {
-  width: 10px;
-  position: relative; }
+  width: 30px;
+  position: relative;
+  padding-left: 13px;
+  cursor: pointer; }
   .userinfo__maininfo__menu img {
     width: 4px;
     margin-top: 6px; }
@@ -251,7 +253,9 @@ a {
     line-height: 44px;
     height: 132px; }
   .userinfo__maininfo__menu {
-    left: -12px; } }
+    left: -5px; }
+  .userinfo__nameblock__edit {
+    font-size: 16px; } }
 
 @media (min-width: 1300px) {
   .blog__blogs__item {
