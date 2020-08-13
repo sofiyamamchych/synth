@@ -307,7 +307,10 @@ a {
     font-size: 38px;
     cursor: pointer;
     &:hover {
-        transform: scale(105%);
+        height: 66px;
+        width: 66px;
+        top: -33px;
+        padding: 6px 22px;
     }
 }
 

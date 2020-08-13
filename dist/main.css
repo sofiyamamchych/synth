@@ -236,7 +236,10 @@ a {
   font-size: 38px;
   cursor: pointer; }
   .addbtn__btn:hover {
-    transform: scale(105%); }
+    height: 66px;
+    width: 66px;
+    top: -33px;
+    padding: 6px 22px; }
 
 @media (min-width: 800px) {
   .userinfo__maininfo__avatar {
