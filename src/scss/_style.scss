@@ -255,7 +255,7 @@ a {
 }
 
 .userinfo__maininfo__menu__dropdown {
-    // display: none;
+    display: none;
     background-color: #fff;
     position: absolute;
     width: 176px;
@@ -269,6 +269,10 @@ a {
     img {
         width: unset;
     }
+}
+
+.userinfo__maininfo__menu:hover .userinfo__maininfo__menu__dropdown {
+    display: block;
 }
 
 .userinfo__maininfo__menu__dropdown__item {
@@ -285,10 +289,27 @@ a {
     }
 }
 
-// .userinfo__maininfo__menu:hover .userinfo__maininfo__menu__dropdown {
-//     display: block;
-// }
+.addbtn {
+    text-align: right;
+    position: relative;
+}
 
+.addbtn__btn {
+    background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: -32px;
+    right: 9.4%;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px 22px;
+    font-size: 38px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(105%);
+    }
+}
 
 @media (min-width: 800px){
     .userinfo__maininfo__avatar {
