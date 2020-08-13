@@ -4,6 +4,7 @@
     position: relative;
     width: 100%;
     z-index: 3;
+    background-color: #fff;
     ul {
         margin: 0;
         padding: 0;
@@ -137,6 +138,8 @@
 .topmenu {
     display: flex;
     padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
 }
 
 .topmenu__item {

@@ -2,10 +2,18 @@
   font-family: OpenSans;
   src: url(fonts/OpenSans-Regular.ttf); }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-Regular.ttf); }
+
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
-  font-family: OpenSans;
-  color: #3E3F58; }
+  font-family: OpenSans, sans-serif;
+  color: #3E3F58;
+  background-color: #F2F2F2; }
 
 a {
   text-decoration: none;
@@ -15,11 +23,75 @@ a {
     opacity: 0.7;
     transition: all 0.2s ease-out; }
 
+/*======== MAIN AREA STRUCTURE ========*/
+@media (min-width: 800px) {
+  .mainwrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 8%; }
+  .userinfo {
+    width: 50%; }
+  .blog {
+    width: 50%; } }
+
+@media (min-width: 1300px) {
+  .userinfo {
+    width: 30%; }
+  .blog {
+    width: 60%; } }
+
+/*======== MAIN AREA STRUCTURE END========*/
+.userinfo__maininfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 12px 30px 20px; }
+
+.userinfo__maininfo__avatar {
+  width: 80px; }
+  .userinfo__maininfo__avatar img {
+    width: 100%; }
+
+.userinfo__nameblock {
+  width: calc(100% - 130px);
+  padding: 1px 24px; }
+
+.userinfo__nameblock__name {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.1; }
+
+.userinfo__nameblock__username {
+  font-size: 16px;
+  margin: 8px 0 10px 0;
+  letter-spacing: -0.3px; }
+
+.userinfo__nameblock__edit {
+  color: #F05D63;
+  font-size: 16px; }
+  .userinfo__nameblock__edit img {
+    width: 20px;
+    position: relative;
+    top: 6px;
+    margin-right: 9px; }
+
+.userinfo__maininfo__menu {
+  width: 10px; }
+  .userinfo__maininfo__menu img {
+    width: 4px;
+    margin-top: 6px; }
+
+@media (min-width: 800px) {
+  .userinfo__maininfo__avatar {
+    width: 120px; } }
+
 /*======== HEADER ========*/
 .header {
   position: relative;
   width: 100%;
-  z-index: 3; }
+  z-index: 3;
+  background-color: #fff; }
   .header ul {
     margin: 0;
     padding: 0;
@@ -119,7 +191,9 @@ a {
 
 .topmenu {
   display: flex;
-  padding: 0 20px; }
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06); }
 
 .topmenu__item {
   padding: 1px 20px 0 0;
