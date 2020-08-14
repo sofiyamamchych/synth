@@ -322,7 +322,7 @@ a {
     }
 
     .userinfo__stats {
-        padding: 0 68px 25px 20px;
+        padding: 0 68px 25px 50px;
     }
 
     .blog__blogs__item {
@@ -340,8 +340,6 @@ a {
     .userinfo__nameblock__edit {
         font-size: 16px;
     }
-
-
 }
 
 @media (min-width: 1300px) {
@@ -353,5 +351,12 @@ a {
 
     .userinfo__maininfo__menu__dropdown {
         left: -10px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .userinfo__stats {
+        padding: 0 68px 25px 20px;
     }
 }

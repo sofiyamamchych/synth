@@ -247,7 +247,7 @@ a {
   .userinfo__maininfo__avatar {
     width: 120px; }
   .userinfo__stats {
-    padding: 0 68px 25px 20px; }
+    padding: 0 68px 25px 50px; }
   .blog__blogs__item h3 {
     font-size: 36px;
     line-height: 44px;
@@ -264,6 +264,10 @@ a {
     margin-bottom: 26px; }
   .userinfo__maininfo__menu__dropdown {
     left: -10px; } }
+
+@media (min-width: 1440px) {
+  .userinfo__stats {
+    padding: 0 68px 25px 20px; } }
 
 /*======== HEADER ========*/
 .header {
